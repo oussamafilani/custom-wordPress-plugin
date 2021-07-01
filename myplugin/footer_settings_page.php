@@ -116,18 +116,8 @@ function CreateTableNewLetter()
                     </tr>
                     <tr>
                         <th scope="row">Please select footer Color</th>
-                        <td>
-                            <select class="" name="footerColor" aria-label="Default select example">
-                                <option selected>Select Footer Color</option>
-                                <option value="#3333ff">Blue</option>
-                                <option value="#404040">Gray</option>
-                                <option value="#4dff4d">Green</option>
-                                <option value="#ff704d">Red</option>
-                                <option value="#ffff66">Yellow</option>
-                                <option value="#ffffff">Light</option>
-                                <option value="#1D2738">Dark</option>
-                            </select>
-                        </td>
+                        <td><input type="color" name="footerColor" style="width:350px;"></td>
+
                     </tr>
                     <tr>
                         <th scope="row">facebook Link</th>
