@@ -51,7 +51,7 @@ function your_function()
 
   if (get_option('footerTemplate') == "Template1") {
     echo "<!-- Footer -->
-    <footer style='background-color: " . get_option('footerColor') . ";' class='text-center text-lg-start text-muted'>
+    <footer style='background-color: " . get_option('footerColor') . ";color:" . get_option('footerTextColor') . ";' class='text-center text-lg-start'>
       <!-- Section: Social media -->
       <section
         class='d-flex justify-content-center justify-content-lg-between p-4 border-bottom'
@@ -177,7 +177,7 @@ function your_function()
 
   if (get_option('footerTemplate') == "Template2") {
     echo '<!-- Footer -->
-<footer style="background-color: ' . get_option('footerColor') . ';"class="text-center text-white">
+<footer style="background-color: ' . get_option('footerColor') . ';color:' . get_option('footerTextColor') . ';" class="text-center" >
   <!-- Grid container -->
   <div class="container p-4">
     <!-- Section: Social media -->
@@ -261,98 +261,6 @@ function your_function()
       </p>
     </section>
     <!-- Section: Text -->
-
-    <!-- Section: Links -->
-    <section class="">
-      <!--Grid row-->
-      <div class="row">
-        <!--Grid column-->
-        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-          <h5 class="text-uppercase">Links</h5>
-
-          <ul class="list-unstyled mb-0">
-            <li>
-              <a href="#!" class="text-white">Link 1</a>
-            </li>
-            <li>
-              <a href="#!" class="text-white">Link 2</a>
-            </li>
-            <li>
-              <a href="#!" class="text-white">Link 3</a>
-            </li>
-            <li>
-              <a href="#!" class="text-white">Link 4</a>
-            </li>
-          </ul>
-        </div>
-        <!--Grid column-->
-
-        <!--Grid column-->
-        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-          <h5 class="text-uppercase">Links</h5>
-
-          <ul class="list-unstyled mb-0">
-            <li>
-              <a href="#!" class="text-white">Link 1</a>
-            </li>
-            <li>
-              <a href="#!" class="text-white">Link 2</a>
-            </li>
-            <li>
-              <a href="#!" class="text-white">Link 3</a>
-            </li>
-            <li>
-              <a href="#!" class="text-white">Link 4</a>
-            </li>
-          </ul>
-        </div>
-        <!--Grid column-->
-
-        <!--Grid column-->
-        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-          <h5 class="text-uppercase">Links</h5>
-
-          <ul class="list-unstyled mb-0">
-            <li>
-              <a href="#!" class="text-white">Link 1</a>
-            </li>
-            <li>
-              <a href="#!" class="text-white">Link 2</a>
-            </li>
-            <li>
-              <a href="#!" class="text-white">Link 3</a>
-            </li>
-            <li>
-              <a href="#!" class="text-white">Link 4</a>
-            </li>
-          </ul>
-        </div>
-        <!--Grid column-->
-
-        <!--Grid column-->
-        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-          <h5 class="text-uppercase">Links</h5>
-
-          <ul class="list-unstyled mb-0">
-            <li>
-              <a href="#!" class="text-white">Link 1</a>
-            </li>
-            <li>
-              <a href="#!" class="text-white">Link 2</a>
-            </li>
-            <li>
-              <a href="#!" class="text-white">Link 3</a>
-            </li>
-            <li>
-              <a href="#!" class="text-white">Link 4</a>
-            </li>
-          </ul>
-        </div>
-        <!--Grid column-->
-      </div>
-      <!--Grid row-->
-    </section>
-    <!-- Section: Links -->
   </div>
   <!-- Grid container -->
 

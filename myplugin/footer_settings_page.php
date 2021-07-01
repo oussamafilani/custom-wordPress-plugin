@@ -12,6 +12,7 @@ global $git;
 global $gm;
 global $tp;
 global $cl;
+global $txt;
 global $wpdb;
 
 if (isset($_POST['wphw_submit'])) {
@@ -27,16 +28,19 @@ function wphw_opt()
     $google = $_POST['google'];
     $template = $_POST['footerTemplate'];
     $color = $_POST['footerColor'];
+    $Textcolor = $_POST['footerTextColor'];
 
-    // global $wpdb;
-    // if (get_option('dbname') != trim($wpdb->dbname)) {
-    //     $wpdb = update_option('dbname', trim($wpdb->dbname));
-    // }
+
+    global $txt;
+    if (get_option('footerTextColor') != trim($Textcolor)) {
+        $txt = update_option('footerTextColor', trim($Textcolor));
+    }
 
     global $cl;
     if (get_option('footerColor') != trim($color)) {
         $cl = update_option('footerColor', trim($color));
     }
+
     global $tp;
     if (get_option('footerTemplate') != trim($template)) {
         $tp = update_option('footerTemplate', trim($template));
@@ -115,8 +119,13 @@ function CreateTableNewLetter()
                         </td>
                     </tr>
                     <tr>
-                        <th scope="row">Please select footer Color</th>
+                        <th scope="row">Please select footer Bqckground Color </th>
                         <td><input type="color" name="footerColor" style="width:350px;"></td>
+
+                    </tr>
+                    <tr>
+                        <th scope="row">Please select footer Text Color</th>
+                        <td><input type="color" name="footerTextColor" style="width:350px;"></td>
 
                     </tr>
                     <tr>
